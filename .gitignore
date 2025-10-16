@@ -1,0 +1,115 @@
+# ======================================
+# 🐍 Python
+# ======================================
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# ======================================
+# 📓 Jupyter Notebooks
+# ======================================
+.ipynb_checkpoints/
+
+# ======================================
+# 🧪 Virtual environments (conda & venv)
+# ======================================
+.venv/
+env/
+ENV/
+venv/
+*.env
+*.conda
+*.yml
+*.yaml
+
+# ======================================
+# 🧠 Data Science & ML Artifacts
+# ======================================
+# Datasets
+*.csv
+*.tsv
+*.xls
+*.xlsx
+*.json
+*.zip
+*.gz
+*.parquet
+
+# Model files
+*.pkl
+*.joblib
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.ckpt
+*.sav
+*.model
+*.onnx
+
+# Intermediate numpy/scipy data
+*.npz
+*.npy
+
+# Outputs
+logs/
+*.log
+output/
+outputs/
+runs/
+mlruns/
+wandb/
+checkpoints/
+
+# ======================================
+# 🧠 Framework-specific
+# ======================================
+# PyTorch Lightning, TensorFlow, Keras
+lightning_logs/
+__results__/
+*.tfevents.*
+*.pb
+*.meta
+
+# ======================================
+# 🧠 PySpark
+# ======================================
+.metastore_db/
+derby.log
+
+# ======================================
+# 🧰 IDEs & Editors
+# ======================================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ======================================
+# 🖥️ OS / System files
+# ======================================
+.DS_Store
+Thumbs.db
+~$*
+
+# ======================================
+# 🗂️ DVC (if you use it later)
+# ======================================
+*.dvc
+.cache/
+
+# ======================================
+# 🔐 Secrets (если случайно добавил .env)
+# ======================================
+.env
+.env.*
+
+# ======================================
+# 📦 Conda environments and lock files
+# ======================================
+conda-meta/
+*.lock

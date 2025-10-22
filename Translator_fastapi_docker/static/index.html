@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>FastAPI Translator</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; max-width: 600px; }
+    textarea { width: 100%; height: 120px; font-size: 16px; }
+    select, button { margin-top: 10px; padding: 8px; font-size: 16px; }
+    pre { background: #f6f6f6; padding: 10px; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <h1>🌍 FastAPI Translator</h1>
+  <textarea id="inputText" placeholder="Введите текст для перевода..."></textarea><br>
+
+  <label>Язык перевода:</label>
+  <select id="targetLang">
+    <option value="en">Английский</option>
+    <option value="de">Немецкий</option>
+    <option value="fr">Французский</option>
+    <option value="es">Испанский</option>
+  </select>
+
+  <label>Переводчик:</label>
+  <select id="provider">
+    <option value="mymemory">MyMemory</option>
+    <option value="libre">LibreTranslate</option>
+    <option value="deepl">DeepL</option>
+  </select><br>
+
+  <button onclick="translateText()">Перевести</button>
+
+  <h2>Результат:</h2>
+  <pre id="output"></pre>
+
+  <script>
+    async function translateText() {
+      const text = document.getElementById('inputText').value;
+      const target = document.getElementById('targetLang').value;
+      const provider = document.getElementById('provider').value;
+      const url = `/translate?text=${encodeURIComponent(text)}&target_lang=${target}&provider=${provider}`;
+      const response = await fetch(url);
+      const data = await response.json();
+      document.getElementById('output').textContent =
+        data.translated ? data.translated :
+        data.translated_text ? data.translated_text :
+        JSON.stringify(data, null, 2);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+fastapi-translator/
+├── main.py
+├── requirements.txt
+├── Dockerfile
+└── static/
+    └── index.html

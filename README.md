@@ -17,4 +17,6 @@
 | 11 | [**Классификация токсичных комментариев**](./Texts) | Текстовая классификация комментариев на токсичные и нетоксичные с использованием BERT | Тексты | Python, Scikit-learn, PyTorch, Transformers, Pandas, NumPy, Matplotlib, NLTK, SpaCy |
 | 12 | [**Прогнозирование заказов такси**](./Time_series) | Прогнозирование спроса на такси по временным рядам | Временные ряды | Python, Pandas, NumPy, Scikit-learn, LightGBM, PyTorch, Matplotlib |
 | 13 | [**Оценка соответствия изображений и текстов**](./Multimodal_data) | Мультимодальная модель для определения семантической связи между текстом и изображением | Мультимодальные данные | Python, PyTorch, Transformers, TensorFlow, Keras, LightGBM, Scikit-learn, Optuna, Pandas, NumPy, Matplotlib, Seaborn |
+| 14 | [**Веб-приложение для перевода текста (FastAPI + Docker)**](./Translator_fastapi_docker) | Минималистичное приложение для перевода текста с русского на английский через API MyMemory. Реализовано на FastAPI и упаковано в Docker-контейнер | Веб-приложения | Python, FastAPI, Docker, Requests, HTML, JavaScript |
+
 
